@@ -1,0 +1,119 @@
+body {
+    background-color: whitesmoke;
+    margin: 0; /* 기본 마진 제거 */
+    font-family: Arial, sans-serif; /* 기본 폰트 설정 */
+}
+
+.write-post-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    min-height: 100vh; /* 화면 높이 전체를 차지하도록 설정 */
+    width: 100%; /* 화면 너비를 전체로 설정 */
+    max-width: 800px; /* 최대 너비를 설정 (예: 800px) */
+    box-sizing: border-box; /* 패딩을 너비에 포함시킴 */
+    margin: 0 auto; /* 중앙 정렬 */
+}
+
+/* 스타일 적용을 위해 클래스 이름을 .write-post-container input으로 지정 */
+.write-post-container input {
+    background-color: transparent; /* content 배경색으로 설정 */
+    border: none; /* border 없앰 */
+    outline: none; /* 포커스 시 생기는 외곽선 제거 */
+    color: #000; /* 텍스트 색상 (필요시 변경) */
+}
+
+/* placeholder 스타일 지정 */
+.write-post-container input::placeholder {
+    color: #000; /* placeholder 텍스트 색상 (필요시 변경) */
+    opacity: 1; /* placeholder의 불투명도 */
+}
+
+.header {
+    background-color: #fff; /* 헤더 배경 색상 설정 */
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* 헤더 하단에 선 추가 */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 중앙 정렬 */
+    width: 100%; /* 헤더가 전체 너비를 차지하도록 설정 */
+    position: relative; /* 절대 위치 지정에 대한 기준 설정 */
+}
+.header h1 {
+    flex: 1; /* 제목이 중앙에 오도록 설정 */
+    text-align: center;
+  }
+
+.back-button {
+    position: absolute;
+    left: 16px; /* content 왼쪽 끝으로 이동, padding 값을 고려하여 조정 */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.complete-button {
+    background: none;
+    border: none;
+    color: #007BFF;
+    font-size: 18px;
+}
+
+.content {
+    background-color: #fff; /* content 배경 색상 설정 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px; /* 내부 여백 추가 */
+    border-radius: 10px; /* 둥근 모서리 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    width: 100%; 
+    max-width: 600px; /* 최대 너비 설정 */
+    position: relative; /* absolute positioning에 대한 기준 설정 */
+    word-break: break-all; /* 단어 콘텐트 박스 넘쳐나는 거 방지 코드 */
+    overflow-wrap: break-word;
+}
+
+.emoji {
+    font-size: 48px;
+}
+
+h2 {
+    margin: 16px 0;
+}
+
+input {
+    width: 80%; /* Set a width that allows the placeholder text to fit */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+input:focus {
+    outline: none;
+    border-color: #aaa;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,17 @@
+
+.font-picker select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.font-picker option {
+    padding: 10px;
+}

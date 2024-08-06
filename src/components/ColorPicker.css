@@ -1,0 +1,23 @@
+.color-picker {
+    margin-top: none;
+    text-align: center;
+}
+
+.color-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.color-option {
+    width: 100px;
+    height: 100px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.color-option.selected {
+    border-color: #007bff;
+}
